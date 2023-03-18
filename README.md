@@ -14,7 +14,7 @@
 - API: yfinance https://pypi.org/project/yfinance/
 
 ## Purpose? Why?
-The goal of this data engineering project was to pull NASDAQ stock information about 3 Japanese and 3 German car manufacturers, to transform that data, and to load that date into a warehouse (where we can then generate a PowerBI report from). In order to perform this ETL project, we will be using AWS cloud services.
+The goal of this data engineering project was to pull NASDAQ stock information about 3 Japanese and 3 German car manufacturers, to transform that data, and to load that data into a warehouse (where we can then generate a PowerBI report from). In order to perform this ETL project, we will be using AWS cloud services.
 
 ## Extraction
 ### API: yfinance Overview
