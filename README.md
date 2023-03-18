@@ -1,4 +1,4 @@
-# Streaming Project (ETL) on AWS - NASDAQ Performance :red_car:
+# Streaming Project on AWS - NASDAQ Performance :red_car:
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Apache Airflow](https://img.shields.io/badge/Apache%20Airflow-017CEE?style=for-the-badge&logo=Apache%20Airflow&logoColor=white)
