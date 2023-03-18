@@ -20,13 +20,21 @@ This goal of this data engineering project was to pull NASDAQ stock information 
 ### API: yfinance Overview
 "yfinance offers a threaded and Pythonic way to download market data from Yahoo!Ⓡ finance." - documentation.
 We will be using yfinance to pull relevant data about the 6 total car makes.
+![alt text](https://github.com/airincs/streaming-project-car/blob/main/images/yfinance.PNG)
 
 ### Python Scripting + Airflow
 In order to pull data from this API, we will be triggering a Python script via Airflow (The Python script and DAG are located in this repository).
 Airflow was initialized and run on an EC2 instance! This allows us to easily access Airflow from the cloud, and it also allows Airflow to run non-stop, allowing the scheduling to function correctly. The Python script pushes the API's json data to Kinesis Firehose. An example CSV of the data can be found in this repository.
+![alt text](https://github.com/airincs/streaming-project-car/blob/main/images/Airflow%20Startup.PNG)
+![alt text](https://github.com/airincs/streaming-project-car/blob/main/images/Airflow%20Dag.PNG)
 
 ### Kinesis Firehose + S3 Bucket
 Kinesis Firehose takes the pulled data from the Python script and pushes it to a S3 Bucket.
+![alt text](https://github.com/airincs/streaming-project-car/blob/main/images/firehose%20name.PNG)
+![alt text](https://github.com/airincs/streaming-project-car/blob/main/images/jsonoutput.PNG)
+![alt text](https://github.com/airincs/streaming-project-car/blob/main/images/carbuckets3.PNG)
 
 ### Redshift + PowerBI
 We then copy the JSON data from the S3 Bucket into Redshift. We convert the JSON data into CSV in order to easily store it. We then connect to Redshift via PowerBI and create a high-level report of the data.
+![alt text](https://github.com/airincs/streaming-project-car/blob/main/images/redshift%20query.PNG)
+![alt text](https://github.com/airincs/streaming-project-car/blob/main/images/PowerBI.PNG)
