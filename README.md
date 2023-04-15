@@ -8,7 +8,7 @@
 ### Technologies and Services Used
 - Airflow
 - Python
-- Various AWS Services: EC2, S3, Kinesis Firehose, Redshift
+- Various AWS Services: EC2, S3, Kinesis Firehose, Redshift, QuickSight
 - PowerBI
 - Linux + Bash Commands
 - API: yfinance https://pypi.org/project/yfinance/
@@ -37,8 +37,8 @@ Kinesis Firehose takes the pulled data from the Python script and pushes it to a
 ![alt text](https://github.com/airincs/streaming-project-car/blob/main/images/jsonoutput.PNG)
 ![alt text](https://github.com/airincs/streaming-project-car/blob/main/images/carbuckets3.PNG)
 
-### Redshift + PowerBI
-We then copy the JSON data from the S3 Bucket into Redshift. We convert the JSON data into CSV in order to easily store it. We then connect to Redshift via PowerBI and create a high-level report of the data.
+### Redshift + PowerBI + AWS QuickSight
+We then copy the JSON data from the S3 Bucket into Redshift. We convert the JSON data into CSV in order to easily store it. We then connect to Redshift via PowerBI and create a high-level report of the data. A report was also created within QuickSight
 
 ![alt text](https://github.com/airincs/streaming-project-car/blob/main/images/redshift%20query.PNG)
 ![alt text](https://github.com/airincs/streaming-project-car/blob/main/images/PowerBI.PNG)
